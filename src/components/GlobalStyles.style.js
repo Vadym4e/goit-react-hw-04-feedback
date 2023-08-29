@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import 'modern-normalize';
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
 ul,ol{
     list-style: none;
 };
@@ -10,7 +10,7 @@ p,h1,h2,h3,h4,h5,h6 {
     margin: 0;
 }
 
-ul,ol {
+ul,ol,li {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -22,5 +22,3 @@ button {
     cursor: pointer;
 }
 `;
-
-export default GlobalStyle;

@@ -3,7 +3,8 @@ import FeedbackOptions from 'components/feedbackOptions/FeedbackOptions';
 import Statistics from 'components/statistics/Statistics';
 import Notification from 'components/notification/Notification';
 import Section from 'components/section/Section';
-import GlobalStyle from 'components/GlobalStyles.style';
+import { GlobalStyle } from 'components/GlobalStyles.style';
+import { Container } from 'components/container/container';
 
 class Feedback extends React.Component {
   state = {
@@ -27,7 +28,7 @@ class Feedback extends React.Component {
 
   render() {
     return (
-      <div>
+      <Container>
         <GlobalStyle />
         <Section title={'Please leave feedback'}>
           <FeedbackOptions
@@ -48,7 +49,7 @@ class Feedback extends React.Component {
             <Notification message="There is no feedback" />
           )}
         </section>
-      </div>
+      </Container>
     );
   }
 }
