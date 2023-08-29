@@ -1,8 +1,9 @@
 import React from 'react';
-import FeedbackOptions from 'components/feedback/FeedbackOptions';
+import FeedbackOptions from 'components/feedbackOptions/FeedbackOptions';
 import Statistics from 'components/statistics/Statistics';
 import Notification from 'components/notification/Notification';
 import Section from 'components/section/Section';
+import GlobalStyle from 'components/GlobalStyles.style';
 
 class Feedback extends React.Component {
   state = {
@@ -27,6 +28,7 @@ class Feedback extends React.Component {
   render() {
     return (
       <div>
+        <GlobalStyle />
         <Section title={'Please leave feedback'}>
           <FeedbackOptions
             options={Object.keys(this.state)}
